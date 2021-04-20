@@ -20,6 +20,7 @@ knitr::opts_chunk$set(echo = FALSE)
 # https://rstudio.github.io/distill/blog.html
 
 library(tidyverse)
+library(rmarkdown)
 
 
 ```
@@ -42,4 +43,8 @@ If we wanted to display a figure a bit outside the bounds of the article text, w
 ```{r, layout="l-body-outset", fig.width=6, fig.height=1.5}
 ggplot(diamonds, aes(carat, price)) + geom_smooth() +
   facet_grid(~ cut)
+```
+
+```{r, layout="l-body-outset"}
+paged_table(mtcars)
 ```
