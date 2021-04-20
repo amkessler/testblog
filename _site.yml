@@ -12,7 +12,7 @@ navbar:
       href: about.html
     - text: "Contributors"
       href: contributors.html
-    - text: "Publish"
+    - text: "Investigative Work"
       menu:
         - text: "Publishing Articles"
           href: publish_article.html

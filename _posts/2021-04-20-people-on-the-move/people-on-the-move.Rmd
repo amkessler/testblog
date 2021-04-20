@@ -1,0 +1,109 @@
+---
+title: "people on the move"
+description: |
+  A short description of the post.
+author:
+  - name: Aaron Kessler
+    url: https://www.google.com
+date: 04-20-2021
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+library(tidyverse)
+library(lubridate)
+library(readxl)
+library(writexl)
+library(openxlsx)
+library(janitor)
+library(leaflet)
+library(RColorBrewer)
+library(htmlwidgets)
+library(htmltools)
+library(tigris)
+library(plotly)
+options(dplyr.summarise.inform = FALSE)
+
+#### DATA PREP ####
+
+### Covid Categorization 
+#vectors for covid months vs not
+
+yyyymm_vector_noncovid <- c("201903",
+                        "201904",
+                        "201905",
+                        "201906",
+                        "201907",
+                        "201908",
+                        "201909",
+                        "201910",
+                        "201911",
+                        "201912", 
+                        "202001",
+                        "202002")
+
+yyyymm_vector_covid <- c("202003",
+                           "202004",
+                           "202005",
+                           "202006",
+                           "202007",
+                           "202008",
+                           "202009",
+                           "202010",
+                           "202011",
+                           "202012", 
+                           "202101",
+                           "202102")
+
+
+###### IN-OUT FLOW NET DATASET #### ------------------------------------------
+
+# bring in the other USPS dataset of aggregate in-out flows by zip
+#save to file for use in subsequent steps
+net_flows_usps_zips <- readRDS("processed_data/net_flows_usps_zips.rds")
+
+#create fields to designate a covid months vs. noncovid 
+net_flows_usps_zips <- net_flows_usps_zips %>% 
+  mutate(
+    covid_flag = case_when(
+      yyyymm %in% yyyymm_vector_noncovid ~ "noncovid",
+      yyyymm %in% yyyymm_vector_covid ~ "covid",
+      TRUE ~ "other"
+      )
+    )
+      
+### Filter out months that are "other"
+net_flows_usps_zips <- net_flows_usps_zips %>% 
+  filter(covid_flag != "other")
+
+
+#Create NYC in-out flow ####
+
+# import zip code list and crosswalk from
+# https://www.baruch.cuny.edu/confluence/display/geoportal/NYC+Geographies
+nyc_lookup <- read_excel("processed_data/nyc_zip_reference/zip_to_zcta10_nyc_revised.xlsx", 
+                                        sheet = "zip_to_zcta")
+
+#filter out companies with own zip codes and Post Offices
+nyc_lookup_justres <- nyc_lookup %>% 
+  filter(ziptype == "ZIP Code area") %>% 
+  distinct(zipcode, borough)
+
+#### join net flows table
+net_flows_usps_zips_NYC <- inner_join(net_flows_usps_zips, nyc_lookup_justres, by = "zipcode")
+
+head(net_flows_usps_zips_NYC)
+
+
+```
+
+Distill is a publication format for scientific and technical writing, native to the web.
+
+Learn more about using Distill at <https://rstudio.github.io/distill>.
+
+
