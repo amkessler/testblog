@@ -6,28 +6,14 @@
       "description": "This is a test example for the SMPA course on building a site using R and Distill",
       "author": [],
       "contents": "\r\nNew text here. Does it work?\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-04-20T17:54:55-04:00"
+      "last_modified": "2021-04-20T18:54:37-04:00"
     },
     {
       "path": "index.html",
       "title": "My Blog",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-04-20T17:54:56-04:00"
-    },
-    {
-      "path": "moving.html",
-      "title": "Untitled",
-      "description": "A new article created using the Distill format.\n",
-      "author": [
-        {
-          "name": "Nora Jones",
-          "url": "https://example.com/norajones"
-        }
-      ],
-      "date": "`r Sys.Date()`",
-      "contents": "\r\nNYC aggregate in-out flows\r\nNext let’s examine the net inflow-outlow aggregate dataset by USPS.\r\n\r\n# A tibble: 2 x 4\r\n  covid_flag total_out total_in total_net_gain\r\n  <chr>          <dbl>    <dbl>          <dbl>\r\n1 covid         955779   603941        -351838\r\n2 noncovid      654652   558893         -95759\r\n\r\nLet’s look at that by borough.\r\n\r\n# A tibble: 10 x 5\r\n# Groups:   borough [5]\r\n   borough       covid_flag total_out total_in total_net_gain\r\n   <chr>         <chr>          <dbl>    <dbl>          <dbl>\r\n 1 Bronx         covid          91783    65968         -25815\r\n 2 Bronx         noncovid       85020    71110         -13910\r\n 3 Brooklyn      covid         263551   178628         -84923\r\n 4 Brooklyn      noncovid      183116   159032         -24084\r\n 5 Manhattan     covid         378823   187619        -191204\r\n 6 Manhattan     noncovid      199748   164610         -35138\r\n 7 Queens        covid         192755   144656         -48099\r\n 8 Queens        noncovid      159559   137961         -21598\r\n 9 Staten Island covid          28867    27070          -1797\r\n10 Staten Island noncovid       27209    26180          -1029\r\n\r\nLet’s look at it through the lens of time and money.\r\n\r\nNet flows by month\r\nWe can see the enormous exodus that happened in March 2020 and the subsequent months, with a rebound as the year progressed.\r\nThe city was still losing more people on a net basis, but the gradually less than before.\r\n\r\n\r\n\r\n\r\n\r\n{\"x\":{\"visdat\":{\"38e814287fdd\":[\"function () \",\"plotlyVisDat\"]},\"cur_data\":\"38e814287fdd\",\"attrs\":{\"38e814287fdd\":{\"x\":{},\"y\":{},\"mode\":\"bars\",\"line\":{\"color\":\"darkred\",\"width\":3},\"name\":\"Moves\",\"alpha_stroke\":1,\"sizes\":[10,100],\"spans\":[1,20],\"type\":\"scatter\"}},\"layout\":{\"margin\":{\"b\":40,\"l\":60,\"t\":25,\"r\":10},\"title\":\"Net number of household moves from all NYC zip codes\",\"xaxis\":{\"domain\":[0,1],\"automargin\":true,\"title\":\"Months\"},\"yaxis\":{\"domain\":[0,1],\"automargin\":true,\"title\":\"Net gain/loss in Moves\"},\"hovermode\":\"closest\",\"showlegend\":false},\"source\":\"A\",\"config\":{\"showSendToCloud\":false,\"displayModeBar\":false},\"data\":[{\"x\":[\"2019-03-01\",\"2019-04-01\",\"2019-05-01\",\"2019-06-01\",\"2019-07-01\",\"2019-08-01\",\"2019-09-01\",\"2019-10-01\",\"2019-11-01\",\"2019-12-01\",\"2020-01-01\",\"2020-02-01\",\"2020-03-01\",\"2020-04-01\",\"2020-05-01\",\"2020-06-01\",\"2020-07-01\",\"2020-08-01\",\"2020-09-01\",\"2020-10-01\",\"2020-11-01\",\"2020-12-01\",\"2021-01-01\",\"2021-02-01\"],\"y\":[-5920,-4987,-5731,-11635,-12688,-10555,-8116,-7229,-6496,-8032,-8040,-6330,-41747,-38198,-37578,-37255,-32937,-29929,-27407,-23343,-22970,-23747,-21834,-14893],\"mode\":\"bars+lines\",\"line\":{\"color\":\"darkred\",\"width\":3},\"name\":\"Moves\",\"type\":\"scatter\",\"marker\":{\"color\":\"rgba(31,119,180,1)\",\"line\":{\"color\":\"rgba(31,119,180,1)\"}},\"error_y\":{\"color\":\"rgba(31,119,180,1)\"},\"error_x\":{\"color\":\"rgba(31,119,180,1)\"},\"xaxis\":\"x\",\"yaxis\":\"y\",\"frame\":null}],\"highlight\":{\"on\":\"plotly_click\",\"persistent\":false,\"dynamic\":false,\"selectize\":false,\"opacityDim\":0.2,\"selected\":{\"opacity\":1},\"debounce\":0},\"shinyEvents\":[\"plotly_hover\",\"plotly_click\",\"plotly_selected\",\"plotly_relayout\",\"plotly_brushed\",\"plotly_brushing\",\"plotly_clickannotation\",\"plotly_doubleclick\",\"plotly_deselect\",\"plotly_afterplot\",\"plotly_sunburstclick\"],\"base_url\":\"https://plot.ly\"},\"evals\":[],\"jsHooks\":[]}\r\nDistill is a publication format for scientific and technical writing, native to the web.\r\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-04-20T18:33:21-04:00"
+      "last_modified": "2021-04-20T18:57:40-04:00"
     }
   ],
   "collections": ["posts/posts.json"]
