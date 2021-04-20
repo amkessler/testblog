@@ -1,7 +1,7 @@
 ---
-title: "About this blog"
+title: "Test Blog"
 description: |
-  Some additional details about the blog - testing out new text
+  This is a test example for the SMPA course on building a site using R and Distill
 ---
 
 ```{r setup, include=FALSE}

@@ -1,13 +1,12 @@
 ---
-title: "Welcome to My Blog"
+title: "Welcome"
 description: |
-  Welcome to our new blog, My Blog. We hope you enjoy 
-  reading what we have to say!
+  Welcome to the GW Test Blog Teaching Site
 author:
-  - name: Nora Jones 
-    url: https://example.com/norajones
-    affiliation: Spacely Sprockets
-    affiliation_url: https://example.com/spacelysprokets
+  - name: Aaron Kessler
+    url: https://www.google.com
+    affiliation: The George Washington University
+    affiliation_url: https://www.gwu.edu/
 date: 04-13-2021
 output:
   distill::distill_article:
@@ -20,7 +19,27 @@ knitr::opts_chunk$set(echo = FALSE)
 # Learn more about creating blogs with Distill at:
 # https://rstudio.github.io/distill/blog.html
 
+library(tidyverse)
+
+
 ```
 
+### Making a chart within our page
 
+```{r}
+#sometimes putting an inital R chunk, even an empty one, can help with formatting of text at the top
+```
 
+You can place almost any normal RMarkdown content within our posts.
+
+```{r}
+ggplot(diamonds, aes(carat, price)) + geom_smooth() +
+  facet_grid(~ cut)
+```
+
+If we wanted to display a figure a bit outside the bounds of the article text, we could specify the `l-body-outset` layout via the layout chunk option:
+
+```{r, layout="l-body-outset", fig.width=6, fig.height=1.5}
+ggplot(diamonds, aes(carat, price)) + geom_smooth() +
+  facet_grid(~ cut)
+```

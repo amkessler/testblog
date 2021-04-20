@@ -2,18 +2,18 @@
   "articles": [
     {
       "path": "about.html",
-      "title": "About this blog",
-      "description": "Some additional details about the blog - testing out new text",
+      "title": "GWU Test Blog",
+      "description": "This is a test example for the SMPA course on building a site using R and Distill",
       "author": [],
-      "contents": "\nNew text here. Does it work?\n\n\n\n",
-      "last_modified": "2021-04-14T20:51:52+00:00"
+      "contents": "\r\nNew text here. Does it work?\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-04-20T17:00:42-04:00"
     },
     {
       "path": "index.html",
       "title": "My Blog",
       "author": [],
-      "contents": "\n\n\n\n",
-      "last_modified": "2021-04-14T20:51:53+00:00"
+      "contents": "\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-04-20T17:00:43-04:00"
     }
   ],
   "collections": ["posts/posts.json"]

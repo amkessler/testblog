@@ -1,7 +1,7 @@
 name: "testblog"
-title: "My Blog"
+title: "GWU Test Blog"
 description: |
-  My Blog
+  Test Blog for GWU Course
 output_dir: "_site"
 navbar:
   right:
