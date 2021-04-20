@@ -3,10 +3,16 @@ title: "GWU Test Blog"
 description: |
   Test Blog for GWU Course
 output_dir: "_site"
+base_url: "https://akessler.netlify.app/"
 navbar:
   right:
     - text: "Home"
       href: index.html
     - text: "About"
       href: about.html
+    - text: "Contributors"
+      href: contributors.html
 output: distill::distill_article
+collections:
+  posts:
+    share: [twitter, linkedin, facebook]

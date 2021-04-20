@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>GWU Test Blog</title>
+    <link>https://akessler.netlify.app/</link>
+    <atom:link href="https://akessler.netlify.app/index.xml" rel="self" type="application/rss+xml"/>
+    <description>Test Blog for GWU Course
+</description>
+    <generator>Distill</generator>
+    <lastBuildDate>Tue, 20 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>second post</title>
+      <dc:creator>Aaron Kessler</dc:creator>
+      <link>https://akessler.netlify.app/posts/2021-04-20-second-post</link>
+      <description>A short description of the post.</description>
+      <category>adminstrative</category>
+      <category>charts</category>
+      <guid>https://akessler.netlify.app/posts/2021-04-20-second-post</guid>
+      <pubDate>Tue, 20 Apr 2021 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Welcome</title>
+      <dc:creator>Aaron Kessler</dc:creator>
+      <link>https://akessler.netlify.app/posts/welcome</link>
+      <description>Welcome to the GW Test Blog Teaching Site</description>
+      <guid>https://akessler.netlify.app/posts/welcome</guid>
+      <pubDate>Tue, 13 Apr 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://akessler.netlify.app/posts/welcome/welcome_files/figure-html5/unnamed-chunk-2-1.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
+  </channel>
+</rss>
