@@ -7,5 +7,9 @@
 
 <!-- badges: end -->
 
-The goal of testblog is to ...
+The goal of testblog is to experiment with Distill as part of a GW course.  
+  
+The website associated with this repo is located at:   
+https://akessler.netlify.app/
+
 
