@@ -6,14 +6,28 @@
       "description": "This is a test example for the SMPA course on building a site using R and Distill",
       "author": [],
       "contents": "\r\nNew text here. Does it work?\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-04-20T19:41:49-04:00"
+      "last_modified": "2021-04-20T20:42:16-04:00"
     },
     {
       "path": "index.html",
       "title": "My Blog",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-04-20T19:41:50-04:00"
+      "last_modified": "2021-04-20T20:42:18-04:00"
+    },
+    {
+      "path": "my-new-article.html",
+      "title": "Untitled",
+      "description": "A new article created using the Distill format.\n",
+      "author": [
+        {
+          "name": "Aaron Kessler",
+          "url": "https://example.com/norajones"
+        }
+      ],
+      "date": "`r Sys.Date()`",
+      "contents": "\r\nDistill is a publication format for scientific and technical writing, native to the web.\r\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-04-20T20:42:19-04:00"
     }
   ],
   "collections": ["posts/posts.json"]

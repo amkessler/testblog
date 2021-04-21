@@ -85,29 +85,33 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>GWU Test Blog: Test Blog</title>
+  <title>GWU Test Blog: Untitled</title>
 
-  <meta property="description" itemprop="description" content="This is a test example for the SMPA course on building a site using R and Distill"/>
+  <meta property="description" itemprop="description" content="A new article created using the Distill format."/>
 
 
+  <!--  https://schema.org/Article -->
+  <meta property="article:published" itemprop="datePublished" content="2021-04-20"/>
+  <meta property="article:created" itemprop="dateCreated" content="2021-04-20"/>
+  <meta name="article:author" content="Aaron Kessler"/>
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="GWU Test Blog: Test Blog"/>
+  <meta property="og:title" content="GWU Test Blog: Untitled"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="This is a test example for the SMPA course on building a site using R and Distill"/>
+  <meta property="og:description" content="A new article created using the Distill format."/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="GWU Test Blog"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="GWU Test Blog: Test Blog"/>
-  <meta property="twitter:description" content="This is a test example for the SMPA course on building a site using R and Distill"/>
+  <meta property="twitter:title" content="GWU Test Blog: Untitled"/>
+  <meta property="twitter:description" content="A new article created using the Distill format."/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description"]}},"value":[{"type":"character","attributes":{},"value":["Test Blog"]},{"type":"character","attributes":{},"value":["This is a test example for the SMPA course on building a site using R and Distill"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Untitled"]},{"type":"character","attributes":{},"value":["A new article created using the Distill format.\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Aaron Kessler"]},{"type":"character","attributes":{},"value":["https://example.com/norajones"]},{"type":"character","attributes":{},"value":["Spacely Sprockets"]},{"type":"character","attributes":{},"value":["https://example.com/spacelysprokets"]}]}]},{"type":"character","attributes":{},"value":["2021-04-20"]},{"type":"character","attributes":{},"value":["distill::distill_article"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2052,7 +2056,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Test Blog","description":"This is a test example for the SMPA course on building a site using R and Distill","authors":[]}
+{"title":"Untitled","description":"A new article created using the Distill format.","authors":[{"author":"Aaron Kessler","authorURL":"https://example.com/norajones","affiliation":"Spacely Sprockets","affiliationURL":"https://example.com/spacelysprokets","orcidID":""}],"publishedDate":"2021-04-20T00:00:00.000-04:00","citationText":"Kessler, 2021"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2087,15 +2091,21 @@ Data Stories
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Test Blog</h1>
+<h1>Untitled</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>This is a test example for the SMPA course on building a site using R and Distill</p></p>
+<p><p>A new article created using the Distill format.</p></p>
 </div>
 
+<div class="d-byline">
+  Aaron Kessler <a href="https://example.com/norajones" class="uri">https://example.com/norajones</a> (Spacely Sprockets)<a href="https://example.com/spacelysprokets" class="uri">https://example.com/spacelysprokets</a>
+  
+<br/>2021-04-20
+</div>
 
 <div class="d-article">
-<p>New text here. Does it work?</p>
+<p>Distill is a publication format for scientific and technical writing, native to the web.</p>
+<p>Learn more about using Distill for R Markdown at <a href="https://rstudio.github.io/distill" class="uri">https://rstudio.github.io/distill</a>.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

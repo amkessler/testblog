@@ -2,22 +2,22 @@ name: "testblog"
 title: "GWU Test Blog"
 description: |
   Test Blog for GWU Course
-output_dir: "_site"
 base_url: "https://akessler.netlify.app/"
+output_dir: "_site"
 navbar:
   right:
     - text: "Home"
       href: index.html
     - text: "About"
       href: about.html
-    - text: "New Menu Item"
-      href: contributors.html
+    - text: "Check out My Article"
+      href: my-new-article.html
     - text: "Data Stories"
       menu:
-        - text: "Campaign Trips"
-          href: publish_article.html
-        - text: "Moving Trends"
-          href: publish_website.html
+        - text: "Welcome Blog Post"
+          href: posts/welcome/
+        - text: "NYT Guilty Verdict Story"
+          href: https://www.nytimes.com/2021/04/20/us/george-floyd-chauvin-verdict.html
 output: distill::distill_article
 collections:
   posts:
